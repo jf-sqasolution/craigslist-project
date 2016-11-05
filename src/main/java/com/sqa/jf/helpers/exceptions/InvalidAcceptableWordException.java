@@ -5,7 +5,7 @@
  * Instructor: Jean-francois Nepton<br>
  * Created: Oct 10, 2016
  */
-package com.sqa.jf.helpers;
+package com.sqa.jf.helpers.exceptions;
 
 /**
  * InvalidAcceptableWordException //ADDD (description of class)

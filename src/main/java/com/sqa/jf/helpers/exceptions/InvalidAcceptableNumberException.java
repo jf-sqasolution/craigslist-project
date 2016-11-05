@@ -8,7 +8,7 @@
  *   
  */
 
-package com.sqa.jf.helpers;
+package com.sqa.jf.helpers.exceptions;
 
 
 /**
