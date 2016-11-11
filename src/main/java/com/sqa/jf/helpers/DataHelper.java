@@ -65,6 +65,12 @@ public class DataHelper {
 						case INT:
 							rowData[i] = rs.getInt(i + colOffset + 1);
 							break;
+						case DOUBLE:
+							rowData[i] = rs.getDouble(i + colOffset + 1);
+							break;
+						case FLOAT:
+							rowData[i] = rs.getFloat(i + colOffset + 1);
+							break;
 						default:
 							break;
 						}
@@ -79,9 +85,10 @@ public class DataHelper {
 			curRow++;
 		}
 		myData = new Object[myArrayData.size()][];
-		for (int i = 0; i < myData.length; i++) {
-			myData[i] = (Object[]) myArrayData.get(i);
-		}
+		// for (int i = 0; i < myData.length; i++) {
+		// myData[i] = (Object[]) myArrayData.get(i);
+		// }
+		myArrayData.toArray(myData);
 		// Step 5
 		rs.close();
 		stmt.close();
@@ -307,7 +314,7 @@ public class DataHelper {
 		if (hasLabels) {
 			lines.remove(0);
 		}
-		String pattern = "(,*)([a-zA-Z0-9\\s-]+)(,*)";
+		String pattern = "(,*)([a-zA-Z0-9.\\s-]+)(,*)";
 		Pattern r = Pattern.compile(pattern);
 		for (int i = 0; i < lines.size(); i++) {
 			int curDataType = 0;
