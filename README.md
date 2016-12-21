@@ -1,7 +1,7 @@
-#Java Automation Project
-##Base Point for Java Automation Projects
+#Craigslist Automation Project
+##Search for jobs on Craigslist based on keywords
 
-*Project for creating automation tests using Selenium WebDriver and TestNG.*
+*Project for an automation test using Selenium WebDriver to search for a set of keywords on Craigslist.*
 
 **Java 7**
 
@@ -13,6 +13,6 @@
 * JDBC
 * MySQL
 
-Java Project for SQA Boot Camp October 3.
+Java Project for SQA Boot Camp Program.
 
-[Jean-francois Nepton](https://github.com/SQABCOct3)
+[Jean-francois Nepton](http://jfbuilds.com)
